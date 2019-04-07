@@ -29,8 +29,6 @@ class FiguresController < ApplicationController
    end
 
    post '/figures/:id/edit' do
-      redirect "/figures/#{params[:id]}/edit"
-   end
 
    get '/figures/:id/edit' do
       @figure = Figure.find(params[:id])
